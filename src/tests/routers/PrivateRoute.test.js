@@ -21,7 +21,7 @@ describe("Testing <PrivateRoute />", () => {
             </MemoryRouter>
         );
         expect(wrapper.find("span").exists()).toBe(true);
-        expect(localStorage.setItem).toHaveBeenCalledWith("lastPath", "/");
+        expect(localStorage.setItem).toHaveBeenCalledWith("lastpath", "/");
     });
 
     test("should block component if not authenticated", () => {
